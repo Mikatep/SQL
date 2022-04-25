@@ -119,7 +119,8 @@ WHERE City = 'LaPlace'AND LastName LIKE 'L%' OR 'M%' OR 'N%';
 USE PersonalTrainer;
 SELECT InvoiceId, Description, Price, Quantity, ServiceDate,
 price*quantity AS LineItemTotal
-FROM InvoiceLineItem;
+FROM InvoiceLineItem
+WHERE price*quantity BETWEEN '15' AND '25';
 
 -- Activity 18
 
@@ -149,6 +150,9 @@ SELECT
 Name
 FROM Goal
 WHERE GoalId = '3' OR GoalId = '8' OR GoalId = '15';
+
+
+
 
  
 
