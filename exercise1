@@ -1,0 +1,4 @@
+-- Activity1
+USE PersonalTrainer;
+SELECT * 
+FROM Exercise;
